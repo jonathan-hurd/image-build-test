@@ -1,5 +1,7 @@
 {
-  "image": "ghcr.io/jonathan-hurd/zenml-vscode-quickstart:latest",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
