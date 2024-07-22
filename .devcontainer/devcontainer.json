@@ -1,0 +1,19 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true
+      },
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": []
+    }
+  },
+  "containerEnv": {},
+  "onCreateCommand": "zenml init && zenml stack set default"
+}
